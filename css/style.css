@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    color: #011F5B;
+    margin-top: 10vh;
+}
+
+#calendar {
+    font-family: 'Rubik', sans-serif;
+    color: #011F5B;
+}
+.weekend {
+    background-color: #ff99c2;
+}
+
+.selectMonth {
+    cursor: pointer;
+}
+.selectMonth:hover {
+    background-color: #663399;
+    color: white;
+}
+#calendar .holiday {
+    background-color: #663399;
+    color: white;
+    cursor: pointer;
+}
+.day, th{
+    cursor: default;
+}
+
+
+@media only screen and (min-width: 800px) {
+    #calendar {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .day, th{
+        border-radius: 6px;
+        padding: 11px;
+        border: 3px solid #7192be;
+        font-weight: bolder;
+    }
+    .day:hover {
+        border: 6px solid #7192be;
+        padding: 8px
+    }
+}
+@media only screen and (max-width: 800px) {
+    #calendar {
+        font-size: 1.7rem;
+    }
+    .day, th{
+        border-radius: 6px;
+        padding: 11px;
+        border: 3px solid #7192be;
+    }
+    .day:hover {
+        border: 6px solid #7192be;
+        padding: 8px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #calendar {
+        font-size: 1.4rem;
+    }
+    .day, th{
+        border-radius: 5px;
+        padding: 8px;
+        border: 2px solid #7192be;
+    }
+    .day:hover {
+        border: 5px solid #7192be;
+        padding: 5px
+    }
+}
+@media only screen and (max-width: 450px){
+    #calendar {
+        font-size: 1.2rem;
+    }
+    .day, th{
+        border-radius: 3px;
+        padding: 5px;
+        border: 1px solid #7192be;
+    }
+    .day:hover {
+        border: 3px solid #7192be;
+        padding: 3px
+    }
+}
+@media only screen and (max-width: 375px) {
+    #calendar {
+        font-size: 1rem;
+    }
+    .day, th{
+        border-radius: 3px;
+        padding: 5px;
+        border: 1px solid #7192be;
+    }
+    .day:hover {
+        border: 3px solid #7192be;
+        padding: 3px
+    }
+}
